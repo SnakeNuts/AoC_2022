@@ -10,6 +10,7 @@ def move(source: int, destination: int, count: int):
         # print("Moving...")
         top_crate = stacks[source].pop()
         temp_stack.append(top_crate)
+
     for i in range(count):
         stacks[destination].append(temp_stack.pop())
 
